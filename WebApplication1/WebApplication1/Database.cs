@@ -13,9 +13,9 @@ public static class Database
 
     public static List<Reservation> Reservations { get; set; } = new List<Reservation>
     {
-        new Reservation(1, 1, "Jan Kowalski", "Wstęp do C#", new DateTime(2026, 5, 10), new DateTime(2026, 5, 10, 8, 0, 0), new DateTime(2026, 5, 10, 10, 0, 0), "confirmed"),
-        new Reservation(2, 2, "Anna Nowak", "Warsztaty REST API", new DateTime(2026, 5, 10), new DateTime(2026, 5, 10, 10, 0, 0), new DateTime(2026, 5, 10, 12, 30, 0), "planned"),
-        new Reservation(3, 3, "Piotr Wiśniewski", "Wykład gościnny", new DateTime(2026, 5, 11), new DateTime(2026, 5, 11, 14, 0, 0), new DateTime(2026, 5, 11, 16, 0, 0), "confirmed"),
-        new Reservation(4, 4, "Jan Kowalski", "Konsultacje projektowe", new DateTime(2026, 5, 12), new DateTime(2026, 5, 12, 9, 0, 0), new DateTime(2026, 5, 12, 10, 0, 0), "cancelled")
+        new Reservation(1, 1, "Jan Kowalski", "Wstęp do C#", new DateOnly(2026, 5, 10), new TimeOnly(8, 0, 0), new TimeOnly(10, 0, 0), "confirmed"),
+        new Reservation(2, 2, "Anna Nowak", "Warsztaty REST API", new DateOnly(2026, 5, 10), new TimeOnly(10, 0, 0), new TimeOnly(12, 30, 0), "planned"),
+        new Reservation(3, 3, "Piotr Wiśniewski", "Wykład gościnny", new DateOnly(2026, 5, 11), new TimeOnly(14, 0, 0), new TimeOnly(16, 0, 0), "confirmed"),
+        new Reservation(4, 4, "Jan Kowalski", "Konsultacje projektowe", new DateOnly(2026, 5, 12), new TimeOnly(9, 0, 0), new TimeOnly(10, 0, 0), "cancelled")
     };
 }

@@ -10,12 +10,12 @@ public class Reservation : IValidatableObject
     public string OrganizerName { get; set; }
     [Required]
     public string Topic { get; set; }
-    public DateTime Date { get; set; }
-    public DateTime StartTime { get; set; }
-    public DateTime EndTime { get; set; }
+    public DateOnly Date { get; set; }
+    public TimeOnly StartTime { get; set; }
+    public TimeOnly EndTime { get; set; }
     public string Status { get; set; }
 
-    public Reservation( int id, int roomId, string organizerName, string topic, DateTime date, DateTime startTime, DateTime endTime, string status )
+    public Reservation( int id, int roomId, string organizerName, string topic, DateOnly date, TimeOnly startTime, TimeOnly endTime, string status )
     {
         this.Id = id;
         this.RoomId = roomId;
